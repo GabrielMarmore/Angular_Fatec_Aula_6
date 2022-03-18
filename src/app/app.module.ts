@@ -9,10 +9,15 @@ import { JurosComponent } from './juros/juros.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot([
-    {path: '', component: HomeComponent},
-    {path: '', component: JurosComponent}
-  ]), FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'juros', component: JurosComponent },
+    ]),
+    FormsModule,
+  ],
   declarations: [AppComponent, HelloComponent, HomeComponent, JurosComponent],
   bootstrap: [AppComponent],
 })
