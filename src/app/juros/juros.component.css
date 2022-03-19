@@ -1,0 +1,7 @@
+div {
+  margin: 15px 0;
+}
+
+div > label {
+  margin-right: 10px;
+}

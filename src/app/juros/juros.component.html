@@ -1,1 +1,18 @@
-<p>Juros works</p>
+<h2>Juros Compostos</h2>
+
+<div>
+  <label for="valor">Valor presente ( R$ )</label>
+  <input id="valor" type="number" step="0.01" [(ngModel)]="vp" />
+</div>
+
+<div>
+  <label for="juros">Juros (% )</label>
+  <input id="juros" type="number" step="0.01" [(ngModel)]="j" />
+</div>
+
+<div>
+  <label for="periodo">Periodo ( meses ) </label>
+  <input id="periodo" type="number" step="1" [(ngModel)]="n" />
+</div>
+<h3>Valor futuro</h3>
+<h4>{{ vp }}</h4>
