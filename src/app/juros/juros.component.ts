@@ -17,4 +17,8 @@ export class JurosComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  getJuros() {
+    return this.vp * Math.pow(1 + this.j / 100, this.n);
+  }
 }
